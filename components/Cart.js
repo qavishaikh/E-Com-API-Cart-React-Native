@@ -12,6 +12,7 @@ const Cart = () => {
       <Text style={styles.heading}>Cart</Text>
       {cart.map((product, index) => (
         <View key={index} style={styles.cartItem}>
+        
           <Text style={styles.title}>{product.title}</Text>
           <Text style={styles.price}>${product.price.toFixed(2)}</Text>
         </View>
